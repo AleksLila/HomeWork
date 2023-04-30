@@ -9,6 +9,7 @@ public class Task_1 {
         Scanner scanner=new Scanner(System.in);
         System.out.println("Input text for reverse: ");
         String text=scanner.nextLine();
+        //1-st sposob:
         List<String> reverseText=new ArrayList<>();
         String reverseWord;
 
@@ -24,5 +25,12 @@ public class Task_1 {
         for (String let : reverseText) {
             System.out.print(let+" ");
         }
+        //2-nd sposob:
+        String text1 = "FIFA will never regret it";
+        String[] words1 = text1.split(" ");
+        for(int i=0; i<words1.length; i++){
+            System.out.print(" "+ words1[words1.length-1-i]);
+        }
+
     }
 }
