@@ -17,12 +17,12 @@ public class Matrix3A {
             System.out.print(" " + matrix[j][i]);
 
         } while (j < 4);
-        do {
+        while(true) {
             i++;
             System.out.print(" " + matrix[i][j]);
             if (i == j) break;
             System.out.print(" " + matrix[j][i]);
+        }
 
-        } while (i < 4);
     }
 }
